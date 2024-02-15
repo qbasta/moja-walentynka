@@ -1,0 +1,79 @@
+:root {
+  font-family: Avenir, sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  background-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #000dff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    #626566,
+    #7a7272,
+    #999d9f
+  ); /* Dodajemy gradient szarości jako tło */
+  transition: background 1s ease-in-out; /* Dodajemy animację do zmiany tła */
+}
+
+body.pink-red-gradient {
+  background: linear-gradient(
+    to right,
+    #d62926,
+    #e95959,
+    #d62926
+  ); /* Dodajemy różowo-czerwony gradient jako tło */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.8em;
+  line-height: 1;
+}
+
+.btn-group {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+button {
+  position: absolute;
+  width: 150px;
+  height: inherit;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 2px solid #242424;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #000000;
+}
+button:nth-child(1) {
+  margin-left: -200px;
+  background: #ba0000;
+}
+button:nth-child(2) {
+  margin-right: -200px;
+  color: #ffffff;
+}

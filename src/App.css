@@ -1,0 +1,122 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.checkbox-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #242424;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+.checkbox.checked {
+  background: limegreen;
+}
+
+.wrapper {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.serce {
+  height: 120px;
+  width: 120px;
+}
+
+@keyframes heart-fade-in-out {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.heart {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("/assets/backheart.png");
+  background-size: cover;
+  animation: heart-fade-in-out 2s linear infinite;
+}
+
+.header-part1 {
+  margin-bottom: 10px;
+}
+
+.header-part2 {
+  font-size: 3em;
+  background: linear-gradient(to right, #e72c2c, #bc0300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.btn-group {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+button {
+  position: absolute;
+  width: 150px;
+  height: inherit;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 2px solid #242424;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #000000;
+}
+button.yes-btn {
+  margin-left: -200px;
+  color: rgb(236, 168, 168);
+  background-color: #7f0000;
+}
+button.no-btn {
+  margin-right: -200px;
+  color: #7c7878;
+  background-color: #242424;
+}
+button.yes-btn.centered {
+  margin-left: 0;
+  margin-right: 0;
+}
